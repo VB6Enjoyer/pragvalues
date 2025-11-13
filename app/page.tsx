@@ -176,11 +176,7 @@ export default function PragValuesTest() {
         <div className="max-w-5xl mx-auto space-y-6 py-8">
           <Card className="shadow-2xl border-slate-200">
             <CardHeader className="text-center space-y-4">
-              <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-600 to-slate-700 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="w-10 h-10 border-4 border-white rounded-full relative">
-                  <div className="absolute inset-0 border-t-4 border-white rounded-full rotate-45"></div>
-                </div>
-              </div>
+              <Image src="/icon-zoom.png" alt="LiquidJoker" width={80} height={80} className="mx-auto" />
               <CardTitle className="text-3xl font-bold text-slate-900">Your Results</CardTitle>
               <CardDescription className="text-lg text-slate-600">
                 Based on your responses across 20 questions
