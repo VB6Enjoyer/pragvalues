@@ -93,7 +93,7 @@ export function CompassChart({ xScore, yScore, title }: CompassChartProps) {
     ctx.save()
     ctx.translate(16, padding + chartSize / 2)
     ctx.rotate(-Math.PI / 2)
-    ctx.fillText("Cosmopolitan ← → Paleo", 0, 0)
+    ctx.fillText("Paleo ← → Cosmopolitan", 0, 0)
     ctx.restore()
 
     // User position marker
@@ -238,7 +238,7 @@ export function CompassChart({ xScore, yScore, title }: CompassChartProps) {
               color: "#334155",
             }}
           >
-            Cosmopolitan ← → Paleo
+            Paleo ← → Cosmopolitan
           </div>
           <div
             style={{
