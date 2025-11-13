@@ -7,6 +7,9 @@ const nextConfig = {
   // This is the name of the GitHub repository.
   basePath: process.env.NODE_ENV === 'production' ? '/pragvalues' : '',
 
+  // Also set the asset prefix for production.
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/pragvalues/' : '',
+
   typescript: {
     ignoreBuildErrors: true,
   },
