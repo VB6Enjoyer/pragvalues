@@ -7,6 +7,8 @@ import "./globals.css"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
+const basePath = process.env.NODE_ENV === "production" ? "/pragvalues" : ""
+
 export const metadata: Metadata = {
   title: "PragValues - Political Compass Test",
   description:
@@ -15,19 +17,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon.png",
+        url: `${basePath}/icon.png`,
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark.png",
+        url: `${basePath}/icon-dark.png`,
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.png",
+        url: `${basePath}/icon.png`,
         type: "image/png",
       },
     ],
-    apple: "/icon-dark.png",
+    apple: `${basePath}/icon-dark.png`,
   },
 }
 

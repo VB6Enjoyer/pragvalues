@@ -127,7 +127,13 @@ export default function PragValuesTest() {
       <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
         <Card className="w-full max-w-2xl shadow-2xl border-slate-200">
           <CardHeader className="text-center space-y-4 pb-8">
-            <Image src="/icon-zoom.png" alt="LiquidJoker" width={80} height={80} className="mx-auto" />
+            <Image
+              src={`${process.env.NODE_ENV === "production" ? "/pragvalues" : ""}/icon-zoom.png`}
+              alt="LiquidJoker"
+              width={80}
+              height={80}
+              className="mx-auto"
+            />
             <CardTitle className="text-4xl font-bold text-slate-900">PragValues</CardTitle>
             <CardDescription className="text-lg text-slate-600 leading-relaxed">
               Discover where you stand on the political compass of libertarian thought. This test evaluates your
@@ -176,7 +182,13 @@ export default function PragValuesTest() {
         <div className="max-w-5xl mx-auto space-y-6 py-8">
           <Card className="shadow-2xl border-slate-200">
             <CardHeader className="text-center space-y-4">
-              <Image src="/icon-zoom.png" alt="LiquidJoker" width={80} height={80} className="mx-auto" />
+              <Image
+                src={`${process.env.NODE_ENV === "production" ? "/pragvalues" : ""}/icon-zoom.png`}
+                alt="LiquidJoker"
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
               <CardTitle className="text-3xl font-bold text-slate-900">Your Results</CardTitle>
               <CardDescription className="text-lg text-slate-600">
                 Based on your responses across 20 questions
